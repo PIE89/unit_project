@@ -1,0 +1,55 @@
+.section-cta {
+  position: relative;
+  padding: 83px 0 84px;
+  @include bgImage("./../img/bg/cta-bg-1600.jpg");
+
+  &::before {
+    @extend %overlay;
+  }
+
+  & .button {
+    display: inline-block;
+  }
+
+  @media (max-width: 1199px) {
+    padding: 40px 0 40px;
+    @include bgImage("./../img/bg/cta-bg-1199.jpg");
+  }
+
+  @media (max-width: 899px) {
+    @include bgImage("./../img/bg/cta-bg-899.jpg");
+  }
+
+  @media (max-width: 599px) {
+    @include bgImage("./../img/bg/cta-bg-599.jpg");
+  }
+}
+
+.section-cta__content {
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.section-cta__title {
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}

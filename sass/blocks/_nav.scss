@@ -1,0 +1,71 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+
+  transition: top 0.2s linear, opacity 0.2s ease-in 0.2s;
+
+  &--active {
+    top: 0;
+    opacity: 1;
+    z-index: 99;
+
+    transition: opacity 0.2s ease-in, top 0.2s linear;
+  }
+}
+
+.nav__top {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: $accentText;
+  text-transform: uppercase;
+
+  @media (max-width: 599px) {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.nav__list {
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 1;
+
+  @media (max-width: 599px) {
+    font-size: 18px;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 40px;
+
+    @media (max-width: 599px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  a {
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $accentText;
+    }
+  }
+}

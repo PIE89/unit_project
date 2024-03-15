@@ -1,0 +1,151 @@
+.header {
+  position: relative;
+  z-index: 999;
+  @include bgImage("./../img/bg/header-bg.jpg");
+
+  &::before {
+    @extend %overlay;
+  }
+
+  @media (max-width: 1199px) {
+    @include bgImage("./../img/bg/header-bg-1199.jpg");
+  }
+
+  @media (max-width: 899px) {
+    @include bgImage("./../img/bg/header-bg-899.jpg");
+  }
+
+  @media (max-width: 599px) {
+    @include bgImage("./../img/bg/header-bg-599.jpg");
+  }
+}
+
+.header__wrapper {
+  position: relative;
+  z-index: 9;
+
+  padding: 60px 0 100px;
+  color: rgb(255, 255, 255);
+
+  @media (max-width: 1199px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 899px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 599px) {
+    padding-bottom: 40px;
+  }
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 140px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+  }
+}
+
+.header__buttons-nav-icon {
+  flex-shrink: 0;
+}
+
+.header__buttons-search {
+  margin-left: auto;
+}
+
+.header__content {
+  margin-bottom: 148px;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 129px;
+  }
+
+  @media (max-width: 899px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 50px;
+  }
+}
+
+.header__title {
+  margin-bottom: 40px;
+  line-height: 1;
+  font-size: 96px;
+  font-weight: 700;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 35px;
+    font-size: 84px;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+}
+
+.header__description {
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 730px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 51px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 16px;
+    max-width: 430px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 31px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.header__form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: 899px) {
+    flex-direction: column;
+    // align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 370px;
+  }
+}
+
+.header__scroll {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: inline-block;
+  }
+}

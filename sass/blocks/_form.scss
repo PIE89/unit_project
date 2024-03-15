@@ -1,0 +1,31 @@
+.input {
+  width: 240px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #ffffff;
+  padding: 0 30px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  @media (max-width: 899px) {
+    width: 100%;
+    padding: 0 46px;
+  }
+
+  @media (max-width: 599px) {
+    padding: 0 36px;
+  }
+}

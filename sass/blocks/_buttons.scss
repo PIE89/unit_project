@@ -1,0 +1,60 @@
+.button {
+  padding: 0 40px;
+  height: 60px;
+  border-radius: 30px;
+  background: rgb(0, 196, 112);
+  border: none;
+  cursor: pointer;
+
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #00ad62;
+    color: rgb(255, 255, 255);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #00a05a;
+    color: rgb(255, 255, 255);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0);
+    }
+
+    &:focus {
+      outline: none;
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  &--solid {
+    background-color: rgb(255, 255, 255);
+    color: rgb(46, 46, 46);
+
+    &:hover {
+      background-color: #000000;
+      color: #fff;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: #2f2f2f;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.title {
+  font-size: 16px;
+  color: $accentText;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  &--white {
+    color: #ffffff;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 14px;
+  }
+}

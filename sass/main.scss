@@ -1,0 +1,34 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+// Base
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+
+// Sections
+@import "./sections/section-cta";
+@import "./sections/section-tasks";
+@import "./sections/section-focus";
+@import "./sections/section-price";
+@import "./sections/section-functional";
+@import "./sections/header";
+@import "./sections/section-clients";
+@import "./sections/footer";
+
+// Blocks
+
+@import "./blocks/form";
+@import "./blocks/buttons";
+@import "./blocks/title";
+@import "./blocks/subtitle";
+@import "./blocks/card";
+@import "./blocks/package";
+@import "./blocks/slider";
+@import "./blocks/nav-icon";
+@import "./blocks/nav";
+@import "./blocks/search";
+
+// OWlCarousel-Theme
+@import "./owlcarousel-clients-theme/vars";
+@import "./owlcarousel-clients-theme/theme";
